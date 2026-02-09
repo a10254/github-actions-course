@@ -1,9 +1,9 @@
 # See 01-building-blocks/README.md for more information
 # about the building blocks of GitHub Actions
 
-name: 01 - Building Blocks
+name: 01 - Building Blocks - Failed Step
 
-on: workflow_dispatch
+on: push
 
 jobs:
   echo-hello:
@@ -16,6 +16,6 @@ jobs:
     steps:
       - name: Failed step
         run: echo "I will succeed"
-            exit 0
+            exit 1
       - name: Say goodbye
         run: echo "Goodbye!"
