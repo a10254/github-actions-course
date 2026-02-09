@@ -3,7 +3,7 @@
 
 name: 01 - Building Blocks - Failed Step
 
-on: push
+on: workflow_dispatch
 
 jobs:
   echo-hello:
