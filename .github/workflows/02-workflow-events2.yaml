@@ -1,11 +1,15 @@
 # See 02-workflow-events/README.md for more information
 # about different triggers for GitHub Actions.
 
-name: 02 - Workflow Events
+name: 02 - Workflow Events 2
 
 on:
   push:
-
+  pull_request:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+    
 jobs:
   echo:
     runs-on: ubuntu-latest
